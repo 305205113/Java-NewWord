@@ -1,4 +1,8 @@
 package Create;
+/*
+ * 向上转型：父类对象通过子类对象实例化
+ * 向下转型：父类对象转换为子类对象，必须强制转换
+ */
 
 public class Polymorphism {
 	public static void main(String[] args) {
@@ -11,7 +15,7 @@ public class Polymorphism {
 		Animal a = new Cat();
 		//调用的是Cat的say方法
 		a.say();
-		//向下转型
+		//向下转型,强制转换
 		Cat c = (Cat)a;
 		//调用的是Cat的work方法
 		c.work();
