@@ -17,6 +17,9 @@ public class ShapeTest {
 		//接口将参数替换成类
 		show.print(new Circle(10.0));
 		show.print(new Rectangle(12.0,15.0));
-
+		
+		MainBoard mainBoard = new MainBoard();
+		mainBoard.plugin(new Mouse());
+		mainBoard.plugin(new KeyBoard());
 	}
 }

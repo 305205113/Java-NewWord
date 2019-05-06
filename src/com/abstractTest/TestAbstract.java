@@ -5,6 +5,11 @@ public class TestAbstract {
 		show(new RoBot());
 		show(new Human());
 		show(new Cat());
+		
+		Lesson l = new Lesson();
+		l.lessonBegin(new Teacher());
+		l.lessonBegin(new Status());
+		
 	}
 	
 	public static void show(Action act){

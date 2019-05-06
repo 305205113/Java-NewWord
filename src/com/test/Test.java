@@ -63,7 +63,6 @@ public class Test {
 		A a = new A();
 		add(a);
 		System.out.println(a.i);
-		
 	}
 	//值传递在方法中改变值并不影响调用时候的真正值
 	public static void change(int i,int j){
