@@ -19,6 +19,25 @@ public class Polymorphism {
 		Cat c = (Cat)a;
 		//调用的是Cat的work方法
 		c.work();
+		
+		Dog dog = new Dog();
+		//向上来类型转换，自动类型转换
+		Animal animal = dog;
+		//判断animal对象中是否含有Dog类型的元素
+		if(animal instanceof Dog){
+			//向下类型转换，强制类型转换
+			Dog dog2 =(Dog)animal;
+		}else{
+			System.out.println("无法进行类型转换Dog");
+		}
+		//判断animal对象中是否含有Cat类型的元素
+		if(animal instanceof Cat){
+			//向下类型转换，强制类型转换
+			Cat cat = (Cat)animal;
+		}else{
+			System.out.println("无法进行类型转换Cat");
+		}
+		
 	}
 	
 	public static void show(Animal a){
@@ -36,10 +55,12 @@ public class Polymorphism {
 	}
 }
 
+//父类
 abstract class Animal{
 	abstract void say();
 }
 
+//子类
 class Cat extends Animal{
 	public void say(){
 		System.out.println("Do you clean anyone?");
@@ -50,6 +71,7 @@ class Cat extends Animal{
 	}
 }
 
+//子类
 class Dog extends Animal{
 	public void say(){
 		System.out.println("Is life always this hard."

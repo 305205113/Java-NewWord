@@ -1,3 +1,4 @@
+
 package com.abstractTest;
 
 public class TestAbstract {

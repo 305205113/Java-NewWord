@@ -7,6 +7,7 @@ public abstract class Action {
 	public static final int WORK = 5;
 	//抽象类抽象方法
 	public abstract void eat();
+	
 	public abstract void sleep();
 	public abstract void work();
 	

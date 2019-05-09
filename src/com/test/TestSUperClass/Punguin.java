@@ -1,5 +1,5 @@
 package com.test.TestSUperClass;
-
+//子类集成父类拥有父类非private 的方法和成员变量
 public class Punguin extends Animal {
 
 	public Punguin(String myName, int myId) {

@@ -7,7 +7,6 @@ class Person{
 		name = name2;
 	}
 	
-	
 	void setAge(int age2){
 		age = age2;
 	}
